@@ -21,6 +21,11 @@ def hello():
 def assignments():
     return render_template("assignments.html")
 
+#static route
+@app.route("/classes")
+def classes():
+    return render_template("classes.html")
+
 #start the server
 if __name__ == "__main__":
     app.run()
